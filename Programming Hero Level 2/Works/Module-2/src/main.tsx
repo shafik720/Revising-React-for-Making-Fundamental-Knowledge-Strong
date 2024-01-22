@@ -1,11 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import UseReducer from "./useReducer.tsx";
 import "./index.css";
-import UseReducer2 from "./UseReducer2.tsx";
-import UseReducer3 from "./useReducer3.tsx";
-import UseReducer4 from "./UseReducer4.tsx";
+import UseReducerWithPayload from "./useReducerWithPayload.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -14,7 +10,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       {/* <UseReducer /> */}
       {/* <UseReducer2 /> */}
       {/* <UseReducer3 /> */}
-      <UseReducer4 /> 
+      {/* <UseReducer4 />  */}
+      <UseReducerWithPayload /> 
     </div>
   </React.StrictMode>
 );
