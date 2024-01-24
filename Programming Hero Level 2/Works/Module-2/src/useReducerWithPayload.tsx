@@ -25,8 +25,8 @@ const UseReducerWithPayload = () => {
       case "name":
         return { ...currentState, name: action.payload };
 
-    case "age" : 
-    return {...currentState, age : action.payload}
+      case "age":
+        return { ...currentState, age: action.payload };
 
       default:
         return currentState;
@@ -60,14 +60,18 @@ const UseReducerWithPayload = () => {
       </h2>
       <form className="my-5" onSubmit={handleSubmit}>
         <input
-          onChange={(e) => dispatch({type : e.target.name || 'name', payload : e.target.value})}
+          onChange={(e) =>
+            dispatch({ type: e.target.name || "name", payload: e.target.value })
+          }
           className="border-2"
           type="text"
           name="name"
           id=""
         />
         <input
-          onChange={(e) => dispatch({type : e.target.name, payload : e.target.value})}
+          onChange={(e) =>
+            dispatch({ type: e.target.name, payload: e.target.value })
+          }
           className="border-2 ms-3"
           type="number"
           name="age"
