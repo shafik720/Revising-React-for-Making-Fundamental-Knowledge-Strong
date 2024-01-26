@@ -31,14 +31,17 @@ const ReducerForm = () => {
           id=""
           className="border-2 m-3"
           placeholder="Your Name"
-          onChange={(e) => dispatch({type : e.target.name, payload : e.target.value})}
+          onChange={(e) =>
+            dispatch({ type: e.target.name, payload: e.target.value })
+          }
         />
         <input
           type="text"
-          name="name"
+          name="email"
           id=""
           className="border-2 m-3"
           placeholder="Your Email"
+          onChange={(e) => dispatch({type: e.target.name , payload : e.target.value})}
         />
         <button className="btn btn-neutral btn-sm">Submit</button>
       </form>
