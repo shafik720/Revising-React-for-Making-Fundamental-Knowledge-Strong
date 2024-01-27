@@ -9,7 +9,7 @@ type TThemeValues = {
   setDark: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const ThemeContext = createContext<TThemeValues | undefined>(undefined);
+export const ThemeContext = createContext<TThemeValues | undefined>(undefined);
 
 const UseContext = ({ children }: TThemecontextType) => {
   const [dark, setDark] = useState(false);
