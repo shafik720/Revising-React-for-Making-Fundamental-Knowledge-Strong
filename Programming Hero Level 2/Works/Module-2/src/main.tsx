@@ -8,6 +8,7 @@ import UseContext from "./useContext.tsx";
 import UseContextExample from "./UseContextExample.tsx";
 import Test from "./test.tsx";
 import UseReducerWithPayload2 from "./useReducerWithPayload2.tsx";
+import UseReducerWithPayload3 from "./useReducerWithPayload3.tsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -23,7 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         {/* <ReducerForm />  */}
         {/* <ApplyUseContextDiv /> */}
         {/* <Test /> */}
-        <UseReducerWithPayload2 />
+        {/* <UseReducerWithPayload2 /> */}
+        <UseReducerWithPayload3 /> 
       </div>
     </React.StrictMode>
   </UseContextExample>

@@ -14,7 +14,7 @@ const reducerFunction = (currentState: typeof initialState, action) => {
       return { ...currentState, email: action.payload };
 
     default:
-      break;
+      return currentState ; 
   }
 };
 
