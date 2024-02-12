@@ -9,10 +9,12 @@ import UseContextExample from "./UseContextExample.tsx";
 import Test from "./test.tsx";
 import UseReducerWithPayload2 from "./useReducerWithPayload2.tsx";
 import UseReducerWithPayload3 from "./useReducerWithPayload3.tsx";
+import UseContextExample2 from "./useContextExample2.tsx";
+import ApplyContext2 from "./ApplyContext2.tsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <UseContextExample>
+  <UseContextExample2>
     <React.StrictMode>
       <div className="text-center w-screen ">
         {/* <App />  */}
@@ -25,8 +27,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         {/* <ApplyUseContextDiv /> */}
         {/* <Test /> */}
         {/* <UseReducerWithPayload2 /> */}
-        <UseReducerWithPayload3 /> 
+        {/* <UseReducerWithPayload3 />  */}
+        <ApplyContext2 /> 
       </div>
     </React.StrictMode>
-  </UseContextExample>
+  </UseContextExample2>
 );
