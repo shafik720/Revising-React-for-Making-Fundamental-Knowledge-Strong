@@ -13,6 +13,7 @@ import UseContextExample2 from "./useContextExample2.tsx";
 import ApplyContext2 from "./ApplyContext2.tsx";
 import UseContext3 from "./useContextExample3.tsx";
 import ApplyContext3 from "./ApplyContext3.tsx";
+import UseRef from "./useRefExample.tsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -31,7 +32,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         {/* <UseReducerWithPayload2 /> */}
         {/* <UseReducerWithPayload3 />  */}
         {/* <ApplyContext2 />  */}
-        <ApplyContext3 /> 
+        {/* <ApplyContext3 />  */}
+        <UseRef /> 
       </div>
     </React.StrictMode>
   </UseContext3>
