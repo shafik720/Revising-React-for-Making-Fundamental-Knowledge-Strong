@@ -1,8 +1,21 @@
-
-
+import { Select } from "./Select";
+import { Select2 } from "./Select2";
 
 export const Test = () => {
-    return (
-        <h2>Hello test</h2>
-    )
-}
+  return (
+    <div>
+        {/* <Select>
+            <Select.SelectOption value='option1' >Option 1</Select.SelectOption>
+            <Select.SelectOption value='option2' >Option 2</Select.SelectOption>
+            <Select.SelectOption value='option3' >Option 3</Select.SelectOption>
+            <Select.SelectOption value='option4' >Option 4</Select.SelectOption>
+        </Select> */}
+        <Select2>
+          <Select2.option  value='option1'>Option1</Select2.option>
+          <Select2.option  value='option2'>Option2</Select2.option>
+          <Select2.option  value='option3'>Option3</Select2.option>
+          <Select2.option  value='option4'>Option4</Select2.option>
+        </Select2>
+    </div>
+  )
+};
