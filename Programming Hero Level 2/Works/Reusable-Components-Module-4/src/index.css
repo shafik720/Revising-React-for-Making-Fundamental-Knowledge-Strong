@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    h1{
+        @apply text-5xl text-green-300
+    }
+    h2{
+        @apply text-2xl font-bold
+    }
+}
+
+@layer components{
+    .btn {
+        @apply border rounded 
+    }
+    .btn-primary {
+        @apply border rounded bg-blue-800 text-white font-bold px-3 py-3 
+    }
+    .btn-purple{
+        @apply border rounded bg-purple-700 text-white font-bold px-3 py-3 
+    }
+    .btn-danger{
+        @apply border rounded bg-red-700 text-white font-bold px-3 py-3 
+    }
+}
+

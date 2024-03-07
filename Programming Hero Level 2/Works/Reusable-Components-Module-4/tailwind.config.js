@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage : {
+        'primary-gradient' : 'linear-gradient(30deg, #047857,#1d4ed8)'
+      }
+    },
   },
   plugins: [],
 }

@@ -1,12 +1,15 @@
+import { MainLayout } from "./routes/Layout/mainLayout"
 
 
 function App() {
 
   return (
     <>
-    <h2>Hello React</h2>
+    <MainLayout />
     </>
   )
 }
 
 export default App
+
+
