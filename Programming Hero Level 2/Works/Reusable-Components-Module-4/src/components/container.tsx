@@ -12,7 +12,8 @@ return (
         <button className="btn-danger">Hello There</button>
         <button className="btn-purple">Hello There</button>
         {children}
-        <Button className='px-3 py-2 border-green-700' variant='outline' />
+        <br />
+        <Button className=' my-4 px-3 py-2 border-8 border-green-700 bg-slate-700' variant='outline' />
     </div>
 )
 }

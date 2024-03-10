@@ -1,5 +1,23 @@
+import { twMerge } from "tailwind-merge";
+
 export const Button = ({ className, variant }) => {
   return <button
-    className={`${className} ${variant == 'outline' ? 'border-4 bg-black text-white border-yellow-600' : 'bg-white text-black border-4 border-purple-600'}`}
+    className={twMerge( 
+      'bg-yellow',
+      className,
+      
+      )}
   >Click Me </button>;
 };
+
+
+
+{/* <Button className={twMerge('border-yellow-600  border-green-700')} /> */}
+
+
+//  <Button className={twMerge(
+//   'border-yellow-600  border-green-700',
+//   'bg-red-500',
+//   className
+//   )} />
+
