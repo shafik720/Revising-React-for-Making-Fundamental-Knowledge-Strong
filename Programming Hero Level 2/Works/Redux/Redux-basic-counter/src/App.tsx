@@ -8,26 +8,11 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='my-5 flex justify-center items-center gap-4'>
+        <button className='border border-4 px-5 py-2 rounded-md bg-slate-700 text-white '>Decrement</button>
+        <h2 className='text-4xl'>0</h2>
+        <button className='border border-4 px-5 py-2 rounded-md bg-purple-900 text-white'>Increment</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
