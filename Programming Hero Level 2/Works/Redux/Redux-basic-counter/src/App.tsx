@@ -11,9 +11,8 @@ function App() {
   const dispatch = useDispatch();
 
   if (counter >= 5) {
-    let result = Math.floor(counter/5);
+    let result = Math.floor(counter / 5);
     console.log(Array(result).fill(1));
-    
   }
   return (
     <>
@@ -32,9 +31,14 @@ function App() {
           Increment
         </button>
       </div>
-      <div className="border-4 p-5">{
-        counter >= 5 && Array(Math.floor(counter/5)).fill(1).map(item => <button className="border border-4 w-16 h-16 bg-slate-800 mx-4 "></button>)
-      }</div>
+      <div className="border-4 p-5">
+        {counter >= 5 &&
+          Array(Math.floor(counter / 5))
+            .fill(1)
+            .map((item) => (
+              <button className="border border-4 w-16 h-16 bg-slate-800 mx-4 "></button>
+            ))}
+      </div>
     </>
   );
 }
