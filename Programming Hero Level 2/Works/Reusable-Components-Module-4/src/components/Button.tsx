@@ -1,22 +1,17 @@
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
+import Cn from "../utlis/cn";
 
 export const Button = ({ className, variant }) => {
   return (
     <button
-      className={twMerge(
-        clsx(
-          "bg-yellow",
-          className,
-          {
-            "bg-white text-red-600 border-slate-700 ": variant == "outline",
-            "bg-black text-yellow-500 border-none font-bold rounded-lg":
-              variant == "solid",
-          }
-        )
-      )}
+      className={Cn("bg-yellow", className, {
+        "bg-white text-red-600 border-slate-700 ": variant == "outline",
+        "bg-black text-yellow-500 border-none font-bold rounded-lg":
+          variant == "outline",
+      })}
     >
-      Click Me{" "}
+      Click Me
     </button>
   );
 };
@@ -30,3 +25,19 @@ export const Button = ({ className, variant }) => {
 //   'bg-red-500',
 //   className
 //   )} />
+
+{
+  /* <button
+className={twMerge(
+  clsx(
+    "bg-yellow",
+    className,
+    variant == "outline" && "bg-white text-red-600",
+    variant == "solid" &&
+      "bg-black text-yellow-500 border-none font-bold rounded-lg"
+  )
+)}
+>
+Click Me{" "}
+</button>  */
+}

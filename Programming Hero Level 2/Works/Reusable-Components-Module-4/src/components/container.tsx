@@ -13,7 +13,7 @@ return (
         <button className="btn-purple">Hello There</button>
         {children}
         <br />
-        <Button className=' my-4 px-3 py-2 border-8 border-green-700 bg-slate-700' variant='solid' />
+        <Button className=' my-4 px-3 py-2 border-8 border-green-700 bg-slate-700' variant='outline' />
     </div>
 )
 }
